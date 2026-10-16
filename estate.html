@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Discover exceptional luxury properties with Aurelia Estates."
+    />
+    
+    <title>Aurelia Estates | Exceptional Living</title>
+
+    <link rel="stylesheet" href="estate.css" />
+    <script src="estate.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <a href="#home" class="logo">AURELIA<span> ESTATES</span></a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        type="button"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#properties">Properties</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="nav-cta">Book a Viewing</a>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <p class="eyebrow">EXCLUSIVE PROPERTIES · EXCEPTIONAL LIVING</p>
+
+        <h1>Discover a Higher Standard of Living.</h1>
+
+        <p class="hero-text">
+          Explore exceptional homes designed for those who appreciate timeless
+          architecture, refined comfort, and distinctive living.
+        </p>
+
+        <a href="#properties" class="primary-btn"> Explore Properties </a>
+      </section>
+
+      <!-- Properties Section -->
+      <section id="properties" class="properties reveal">
+        <p class="eyebrow">OUR COLLECTION</p>
+        <h2>Exceptional Properties</h2>
+
+        <p>Discover a curated collection of remarkable homes.</p>
+
+        <div
+          class="property-filters"
+          aria-label="Filter properties by location"
+        >
+          <button
+            class="filter-btn active"
+            data-location="all"
+            aria-pressed="true"
+          >
+            All Properties
+          </button>
+          <button class="filter-btn" data-location="Lagos" aria-pressed="false">
+            Lagos
+          </button>
+          <button class="filter-btn" data-location="Abuja" aria-pressed="false">
+            Abuja
+          </button>
+          <button
+            class="filter-btn"
+            data-location="Ibadan"
+            aria-pressed="false"
+          >
+            Ibadan
+          </button>
+        </div>
+
+        <div class="property-grid">
+          <!-- Property 1 -->
+          <article class="property-card reveal reveal-delay-1" data-location="Lagos">
+            <div class="property-image">
+              <img
+                src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=85"
+                alt="Modern luxury villa with a swimming pool"
+                loading="lazy"
+              />
+              <span class="property-tag">FEATURED</span>
+            </div>
+
+            <div class="property-info">
+              <p class="property-location">LAGOS, NIGERIA</p>
+              <h3>The Grand Meridian</h3>
+              <p class="property-description">
+                A contemporary villa designed for elegant living and
+                entertaining.
+              </p>
+
+              <div class="property-details">
+                <span>5 Bedrooms</span>
+                <span>4 Bathrooms</span>
+                <span>Pool</span>
+              </div>
+
+              <div class="property-bottom">
+                <div>
+                  <span class="price-label">Illustrative price</span>
+                  <p class="property-price">₦850 Million</p>
+                </div>
+                <a href="#contact" class="property-link">Enquire ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Property 2 -->
+          <article class="property-card reveal reveal-delay-2" data-location="Abuja">
+            <div class="property-image">
+              <img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
+                alt="Elegant contemporary home with modern architectural details"
+                loading="lazy"
+              />
+              <span class="property-tag">EXCLUSIVE</span>
+            </div>
+
+            <div class="property-info">
+              <p class="property-location">ABUJA, NIGERIA</p>
+              <h3>The Ivory Residence</h3>
+              <p class="property-description">
+                A refined residence combining spacious interiors with timeless
+                design.
+              </p>
+
+              <div class="property-details">
+                <span>4 Bedrooms</span>
+                <span>4 Bathrooms</span>
+                <span>Garden</span>
+              </div>
+
+              <div class="property-bottom">
+                <div>
+                  <span class="price-label">Illustrative price</span>
+                  <p class="property-price">₦620 Million</p>
+                </div>
+                <a href="#contact" class="property-link">Enquire ↗</a>
+              </div>
+            </div>
+          </article>
+          
+          <!-- Property 3 -->
+          <article class="property-card reveal reveal-delay-3" data-location="Ibadan">
+            <div class="property-image">
+              <img
+                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+                alt="Premium modern home with warm lighting and sophisticated finishes"
+                loading="lazy"
+              />
+              <span class="property-tag">NEW COLLECTION</span>
+            </div>
+
+            <div class="property-info">
+              <p class="property-location">IBADAN, NIGERIA</p>
+              <h3>The Oakstone Manor</h3>
+              <p class="property-description">
+                A distinctive modern home with inviting spaces and understated
+                luxury.
+              </p>
+
+              <div class="property-details">
+                <span>4 Bedrooms</span>
+                <span>3 Bathrooms</span>
+                <span>Terrace</span>
+              </div>
+
+              <div class="property-bottom">
+                <div>
+                  <span class="price-label">Illustrative price</span>
+                  <p class="property-price">₦380 Million</p>
+                </div>
+                <a href="#contact" class="property-link">Enquire ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <p class="eyebrow">THE AURELIA DIFFERENCE</p>
+        <h2>More Than a Property. A Way of Living.</h2>
+
+        <p>
+          We believe finding a home should be an experience defined by care,
+          clarity, and exceptional attention to detail.
+        </p>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <p class="eyebrow">YOUR NEXT CHAPTER</p>
+        <h2>Find a Place That Feels Like Yours.</h2>
+
+        <p>Interested in a property? Get in touch to arrange a viewing.</p>
+
+        <form id="property-enquiry-form" class="contact-form">
+          <div class="form-group">
+            <label for="enquiry-property">Property of Interest</label>
+            <input
+              type="text"
+              id="enquiry-property"
+              name="property"
+              placeholder="Select a property using an Enquire button"
+              readonly
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="enquiry-name">Your Name</label>
+            <input
+              type="text"
+              id="enquiry-name"
+              name="name"
+              placeholder="Enter your name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="enquiry-email">Email Address</label>
+            <input
+              type="email"
+              id="enquiry-email"
+              name="email"
+              placeholder="Enter your email address"
+              autocomplete="email"
+              required/>
+          </div>
+
+          <button type="submit" class="primary-btn">Send Enquiry</button>
+        </form>
+
+        <p
+          id="form-message"
+          class="form-message"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © 2026 Aurelia Estates. Fictional portfolio concept by Emmilee Digital.
+      </p>
+    </footer>
+  </body>
+</html>
